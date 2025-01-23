@@ -59,18 +59,12 @@
 							<!-- Form -->
 								<div class="column">
 									<h3>Get in Touch</h3>
-									<form action="#" method="post">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input name="name" id="name" type="text" placeholder="Name"></div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input name="email" id="email" type="email" placeholder="Email"></div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6" placeholder="Message"></textarea></div>
-										<ul class="actions"><li><input value="Send Message" class="button" type="submit"></li>
-										</ul></form>
+									<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    										<input type="text" name="name" placeholder="Your Name" required>
+    										<input type="email" name="email" placeholder="Your Email" required>
+    										<textarea name="message" placeholder="Your Message" required></textarea>
+    										<button type="submit">Send</button>
+									</form>
 								</div>
 						</section></section></div>
 		<div class="copyright">

@@ -431,10 +431,10 @@
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			-moz-pointer-events: auto;
-			-webkit-pointer-events: auto;
-			-ms-pointer-events: auto;
-			pointer-events: auto;
+			-moz-pointer-events: none;
+			-webkit-pointer-events: none;
+			-ms-pointer-events: none;
+			pointer-events: none;
 			opacity: 0.25;
 		}
 
@@ -615,7 +615,7 @@
 			display: block;
 			height: 2.75em;
 			line-height: 2.75em;
-			pointer-events: auto;
+			pointer-events: none;
 			position: absolute;
 			right: 0;
 			text-align: center;

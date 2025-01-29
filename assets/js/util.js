@@ -153,7 +153,7 @@
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href == '#' || href == '' || href == '#' + id)
+							if (!href || href == '#' || href == '' || href == '#' + id) || href == 'https://listen.music-hub.com/AoGww9'
 								return;
 
 							// Cancel original event.

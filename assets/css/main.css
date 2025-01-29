@@ -862,6 +862,7 @@
 					max-width: 100%;
 					height: auto;
 					vertical-align: middle;
+					pointer-events: auto;
 				}
 
 				.gallery .content .media:hover img {

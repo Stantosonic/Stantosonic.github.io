@@ -153,7 +153,7 @@
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href == '#' || href == '' || href == '#' + id) || href && href.startsWith('https://listen.music-hub.com/') || href && href.startsWith('https://distrokid.com/hyperfollow/')
+							if (!href || href == '#' || href == '' || href == '#' + id) || href && href.startsWith('https://listen.music-hub.com/') || href && href.startsWith('https://distrokid.com/hyperfollow/'))
 								return;
 
 							// Cancel original event.

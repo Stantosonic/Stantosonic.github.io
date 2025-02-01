@@ -153,7 +153,7 @@
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href == '#' || href == '' || href == '#' + id)
+							if (!href || href == '#' || href == '' || href == '#' + id  || href && href.startsWith('https://listen.music-hub.com/') )
 								return;
 
 							// Cancel original event.
@@ -166,7 +166,7 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target == '_blank' || ( (href && href.startsWith('https://listen.music-hub.com/')) || (href && href.startsWith('https://distrokid.com/hyperfollow/')) )    )
+									if (target == '_blank')
 										window.open(href);
 									else
 										window.location.href = href;

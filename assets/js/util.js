@@ -157,11 +157,7 @@
 								return;
 
 							// Cancel original event.
-							if  not  ( (href && href.startsWith('https://listen.music-hub.com/')) || (href && href.startsWith('https://distrokid.com/hyperfollow/')) ) 
-							{
 								event.preventDefault();
-							}
-							
 								event.stopPropagation();
 
 							// Hide panel.
@@ -170,7 +166,7 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target == '_blank')
+									if (target == '_blank' || ( (href && href.startsWith('https://listen.music-hub.com/')) || (href && href.startsWith('https://distrokid.com/hyperfollow/')) )    )
 										window.open(href);
 									else
 										window.location.href = href;

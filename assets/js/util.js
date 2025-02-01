@@ -157,8 +157,10 @@
 								return;
 
 							// Cancel original event.
-							if  not  ( (href && href.startsWith('https://listen.music-hub.com/')) || (href && href.startsWith('https://distrokid.com/hyperfollow/')) )
+							if  not  ( (href && href.startsWith('https://listen.music-hub.com/')) || (href && href.startsWith('https://distrokid.com/hyperfollow/')) ) 
+							{
 								event.preventDefault();
+							}
 							
 								event.stopPropagation();
 

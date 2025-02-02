@@ -153,7 +153,7 @@
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href == '#' || href == '' || href == '#' + id) ||  href == 'https://listen.music-hub.com/AoGww9')
+							if (!href || href == '#' || href == '' || href == '#' + id) 
 								return;
 
 							// Cancel original event.
@@ -166,7 +166,7 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target == '_blank')
+									if (target == '_blank' || href == 'https://listen.music-hub.com/AoGww9') 
 										window.open(href);
 									else
 										window.location.href = href;
